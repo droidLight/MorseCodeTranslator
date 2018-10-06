@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="0.03"
+        android:hint="Type your code"
+        android:textColor="@color/colorText" />
+
+    <Button
+        android:id="@+id/ok"
+        android:text="Ok"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:theme="@style/myButton"
+        android:clickable="true"
+        android:onClick="clicked" />
+</LinearLayout>
